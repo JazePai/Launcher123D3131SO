@@ -1,79 +1,115 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" media="all" href="./style.css" />
-<link rel="stylesheet" href="css/slide.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launcher</title>
 
- 
+    <!-- Enlace a tu archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
 
-<script type="text/javascript" src="./shell.js"></script>
+        /* Estilo del contenedor principal con la imagen de fondo */
+        #launcher-wrap {
+            background-image: url('/bg_body_common.jpg'); /* Cambia esto por el nombre de tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
 
-<title></title>
-      <style>
-        .bx-wrapper .bx-default-pager.bx-pager a:hover, .bx-wrapper .bx-default-pager.bx-pager a.active, .bx-wrapper .bx-default-pager.bx-pager a:focus {
-            background: url('image/img_rolling_on.gif');
+        /* Estilos para la cabecera */
+        #header {
+            text-align: center;
+            padding: 20px;
         }
-        .bx-wrapper .bx-default-pager.bx-pager a {
-            background: url('image/img_rolling_off.gif');
-            width:8px;
-            height: 8px;
-            border-radius: 0;
+
+        /* Estilo del contenido principal */
+        #contents {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
         }
-        .bx-controls-direction {
-            display: none;
+
+        /* Lista de noticias */
+        .news {
+            list-style: none;
+            padding: 0;
         }
-        .bx-wrapper {
-            max-width:298px !important;
-            position: relative;
-            box-shadow: none;
-            border: none;
-            background: none;
+
+        .news li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+            border-radius: 5px;
         }
-        .bx-wrapper .bx-pager {
-            position: absolute;
-            right: 5%;
-            bottom: 5%;
-            width: auto;
+
+        .news li a {
+            color: #FFD700; /* Color dorado para los enlaces */
+            text-decoration: none;
         }
-      </style>
+
+        .news li a:hover {
+            text-decoration: underline;
+        }
+
+        .mode {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .notice em {
+            color: #FF0000; /* Color rojo para NOTICE */
+        }
+
+        .event em {
+            color: #00FF00; /* Color verde para EVENT */
+        }
+
+        /* Estilos responsive */
+        @media (max-width: 600px) {
+            #contents {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
-<div id="launcher-wrap">
-    <!-- header -->
-    <div id="header">
-        <h1><a href="/Main/Main.aspx"><img src="images/us/h1_logo.jpg" alt="digimon masters" /></a></h1>
+    <div id="launcher-wrap">
+        <!-- header -->
+        <div id="header">
+            <h1>Digimon Masters Launcher</h1>
+        </div>
+        <!-- //header -->
+
+        <!-- contents -->
+        <div id="contents">
+            <!-- list-area -->
+            <ul class="news">
+                <li class="first"><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1221" target="_blank">[Anuncio] Anuncio de Cuentas Baneadas y Violacion ...</a></li>
+                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1220" target="_blank">[Comunicado] Planes dentro de los sistemas Loteria...</a></li>
+                <li><span class="mode event"><em>EVENT</em></span> <a href="https://spladmo.gameking.com/News/EventView.aspx?idx=133" target="_blank">Nota de Actualizacion y Promocion 10/10/2024...</a></li>
+                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1219" target="_blank">[Comunicado Oficial] Loteria Digital y la Converge...</a></li>
+                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1218" target="_blank">[Comunicado] Cambios en dominio de correo electron...</a></li>
+                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1217" target="_blank">Anuncio: Regalo de Sellos Basicos de Di'Maestro pa...</a></li>
+            </ul>
+            <!-- //list-area -->
+        </div>
+        <!-- //contents -->
     </div>
-    <hr />
-   
-    						    
-
-    <!-- contents -->
-    <div id="contents">
-        <div class="event-banner">
-            <div id="rolling">
-                <div id="slider" class="slide_area">
-                    
-                    <div class="slider">
-                        
-                        
-                    </div>
-
-                </div>
-            </div>
-
-        </div><!-- //event-banner -->
-
-        <!-- list-area -->
-        <ul class="news">
-			<li class="first"><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1221" target="_blank">[Anuncio] Anuncio de Cuentas Baneadas y Violacion ...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1220" target="_blank">[Comunicado] Planes dentro de los sistemas Loteria...</a></li><li ><span class="mode event"><em>EVENT</em></span> <a href="/News/EventView.aspx?idx=133" target="_blank">Nota de Actualizacion y Promocion 10/10/2024...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1219" target="_blank">[Comunicado Oficial] Loteria Digital y la Converge...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1218" target="_blank">[Comunicado] Cambios en dominio de correo electron...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1217" target="_blank">Anuncio: Regalo de Sellos Basicos de Di'Maestro pa...</a></li>
-        </ul>
-        <!-- //list-area -->
-    </div>
-    <!-- //contents -->
-</div>
 </body>
 </html>
-
-
