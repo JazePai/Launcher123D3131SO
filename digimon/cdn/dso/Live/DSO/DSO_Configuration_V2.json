@@ -9,7 +9,7 @@
   "PatchInfo": {
     "DownloadUrl": "https://jazepai.github.io/LauncherDSO/UpdatePatch/",
     "MinPatchVersion": 1,
-    "PatchVersion": 80
+    "PatchVersion": 1
   },
   "LanuncherInfo": {
     "DownloadPath": "https://jazepai.github.io/LauncherDSO/Launcher/",
