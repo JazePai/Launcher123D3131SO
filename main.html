@@ -4,112 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="./style.css" />
+    <link rel="stylesheet" href="css/slide.css">
+    <script type="text/javascript" src="./shell.js"></script>
     <title>Launcher</title>
-
-    <!-- Enlace a tu archivo de estilos CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
     <style>
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
+            background: url('/bg_body_common.png') no-repeat center center fixed; /* Cambia esta ruta por la de tu imagen */
+            background-size: cover; /* Esto asegura que la imagen cubra todo el fondo */
         }
-
-        /* Estilo del contenedor principal con la imagen de fondo */
         #launcher-wrap {
-            background-image: url('/bg_body_common.jpg'); /* Cambia esto por el nombre de tu imagen */
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
+            width: 742px; /* Ancho de la imagen */
+            height: 426px; /* Altura de la imagen */
+            position: relative;
+            margin: 0 auto; /* Centrar el contenedor */
+            overflow: hidden;
+            border: 2px solid #fff; /* Opcional: borde blanco alrededor del contenedor */
         }
-
-        /* Estilos para la cabecera */
-        #header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Estilo del contenido principal */
         #contents {
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
-            padding: 20px;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 600px;
+            background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el contenido */
+            padding: 20px; /* Espaciado interno */
         }
-
-        /* Lista de noticias */
         .news {
-            list-style: none;
+            list-style-type: none; /* Sin viñetas */
             padding: 0;
         }
-
         .news li {
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
-            border-radius: 5px;
-        }
-
-        .news li a {
-            color: #FFD700; /* Color dorado para los enlaces */
-            text-decoration: none;
-        }
-
-        .news li a:hover {
-            text-decoration: underline;
-        }
-
-        .mode {
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        .notice em {
-            color: #FF0000; /* Color rojo para NOTICE */
-        }
-
-        .event em {
-            color: #00FF00; /* Color verde para EVENT */
-        }
-
-        /* Estilos responsive */
-        @media (max-width: 600px) {
-            #contents {
-                width: 90%;
-            }
+            margin-bottom: 10px; /* Espaciado entre los anuncios */
         }
     </style>
 </head>
 <body>
-    <div id="launcher-wrap">
-        <!-- header -->
-        <div id="header">
-            <h1>Digimon Masters Launcher</h1>
-        </div>
-        <!-- //header -->
-
-        <!-- contents -->
-        <div id="contents">
-            <!-- list-area -->
-            <ul class="news">
-                <li class="first"><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1221" target="_blank">[Anuncio] Anuncio de Cuentas Baneadas y Violacion ...</a></li>
-                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1220" target="_blank">[Comunicado] Planes dentro de los sistemas Loteria...</a></li>
-                <li><span class="mode event"><em>EVENT</em></span> <a href="https://spladmo.gameking.com/News/EventView.aspx?idx=133" target="_blank">Nota de Actualizacion y Promocion 10/10/2024...</a></li>
-                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1219" target="_blank">[Comunicado Oficial] Loteria Digital y la Converge...</a></li>
-                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1218" target="_blank">[Comunicado] Cambios en dominio de correo electron...</a></li>
-                <li><span class="mode notice"><em>NOTICE</em></span> <a href="https://spladmo.gameking.com/News/NoticeView.aspx?idx=1217" target="_blank">Anuncio: Regalo de Sellos Basicos de Di'Maestro pa...</a></li>
-            </ul>
-            <!-- //list-area -->
-        </div>
-        <!-- //contents -->
+<div id="launcher-wrap">
+    <!-- header -->
+    <div id="header">
+        <!--<h1><a href="/Main/Main.aspx"><img src="images/us/h1_logo.jpg" alt="digimon masters" /></a></h1>-->
     </div>
+    <hr />
+    <!-- //header -->
+
+    <!-- contents -->
+    <div id="contents">
+        <div class="event-banner">
+            <div id="rolling">
+                <div id="slider" class="slide_area">
+                    <div class="slider">
+                        <!-- Aquí puedes agregar imágenes para el slider si es necesario -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- //event-banner -->
+
+        <!-- list-area -->
+        <ul class="news">
+            <li class="first"><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1221" target="_blank">[Anuncio] Anuncio de Cuentas Baneadas y Violacion ...</a></li>
+            <li><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1220" target="_blank">[Comunicado] Planes dentro de los sistemas Loteria...</a></li>
+            <li><span class="mode event"><em>EVENT</em></span> <a href="/News/EventView.aspx?idx=133" target="_blank">Nota de Actualizacion y Promocion 10/10/2024...</a></li>
+            <li><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1219" target="_blank">[Comunicado Oficial] Loteria Digital y la Converge...</a></li>
+            <li><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1218" target="_blank">[Comunicado] Cambios en dominio de correo electron...</a></li>
+            <li><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1217" target="_blank">Anuncio: Regalo de Sellos Basicos de Di'Maestro pa...</a></li>
+        </ul>
+        <!-- //list-area -->
+    </div>
+    <!-- //contents -->
+</div>
 </body>
 </html>
