@@ -1,79 +1,91 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" media="all" href="./style.css" />
-<link rel="stylesheet" href="css/slide.css">
+    <meta http-equiv="X-UA-Compatible" />
+    <title>
+        Welcome to Digital Shinka Online!!
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="Welcome to Digital Shinka Online!!">
 
- 
+    <link rel="stylesheet" type="text/css" href="/inc/css/default.css?ver=202303291050?2022080416" />
+    <link rel="stylesheet" type="text/css" href="/inc/css/common.css?2022080416" />
+    <link rel="stylesheet" type="text/css" href="/inc/css/top.css?2022080416" />
+    <link rel="stylesheet" type="text/css" href="/inc/css/footer.css?ver=20230329?2022080416" />
 
-<script type="text/javascript" src="./shell.js"></script>
+   
 
-<title></title>
-      <style>
-        .bx-wrapper .bx-default-pager.bx-pager a:hover, .bx-wrapper .bx-default-pager.bx-pager a.active, .bx-wrapper .bx-default-pager.bx-pager a:focus {
-            background: url('image/img_rolling_on.gif');
+    <!-- Google tag (gtag.js) -->
+
+    <script type="text/javascript">
+        function OpenBillion() {
+            document.getElementById('popup_billion').style.display = "block";
         }
-        .bx-wrapper .bx-default-pager.bx-pager a {
-            background: url('image/img_rolling_off.gif');
-            width:8px;
-            height: 8px;
-            border-radius: 0;
+        function CloseBillion() {
+            document.getElementById('popup_billion').style.display = "none";
         }
-        .bx-controls-direction {
-            display: none;
+        function CloseOutBillion() {
+            document.getElementById('popup_billion').style.display = "none";
+            setCookie('popup_Billion', 'true');
         }
-        .bx-wrapper {
-            max-width:298px !important;
-            position: relative;
-            box-shadow: none;
-            border: none;
-            background: none;
-        }
-        .bx-wrapper .bx-pager {
-            position: absolute;
-            right: 5%;
-            bottom: 5%;
-            width: auto;
-        }
-      </style>
+    </script>
+
+    <script type="text/javascript" src="/inc/script/jquery.js?2022080416"></script>
+    <script type="text/javascript" src="/inc/script/top.js?2022080416"></script>
+    <script type="text/javascript" src="/inc/script/loginMgr.js?2022080416"></script>
+    <script type="text/javascript" src="/inc/script/common.js?2022080416"></script>
+
+    <style type="text/css">
+        * { margin: 0; padding: 0; border: none; }
+        html { padding: 0; margin: 0; overflow-x: hidden; overflow-y: hidden; scrollbars: no; border: none; }
+    </style>
 </head>
+
 <body>
-<div id="launcher-wrap">
-    <!-- header -->
-    <div id="header">
-        <!--<h1><a href="/Main/Main.aspx"><img src="images/us/h1_logo.jpg" alt="digimon masters" /></a></h1>-->
+    <form name="form1" method="post" action="GameLauncher.aspx" id="form1">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODk4Nzk3NDQ4D2QWAgIBD2QWAgICD2QWAgIBDxYCHgdWaXNpYmxlZ2Rk" />
+        </div>
+
+        <script type="text/javascript">
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+        </script>
+
+        <div id="wrap">
+            <a href="" target="_blank">
+                <img src="https://jazepai.github.io/LauncherDSO/original.png" />
+            </a>
+        </div>
+    </form>
+
+    <div style="position:relative; width:1000px; margin: 0px auto; text-align:center; display:none; z-index:100;" id="popup_billion">
+        <div style="width:700px; height:700px; top:160px; left:210px; position:absolute; border:0px solid black;">
+            <img src="/images/event/2014/03/27/20140326_Main_popup.png" alt="" usemap="#map_billion" />
+            <map id="Map1" name="map_billion">
+                <area shape="rect" coords="629,11,652,38" href="#" onclick="CloseBillion();" alt="닫기" />
+                <area shape="rect" coords="29,262,228,325" href="http://youtu.be/fxQG5aj44_8" target="_blank" alt="빌리언 뮤직비디오 보기" />
+                <area shape="rect" coords="660,0,700,40" href="https://www.facebook.com/move.entertainment.1" target="_blank" alt="facebook" />
+                <area shape="rect" coords="660,40,700,80" href="http://www.youtube.com/user/MoveEntertain" target="_blank" alt="유투브" />
+                <area shape="rect" coords="520,666,630,680" href="#" onclick="CloseOutBillion();" alt="오늘 그만보기" />
+            </map>
+        </div>
     </div>
-    <hr />
-    <!-- //header -->
-    						    
-
-    <!-- contents -->
-    <div id="contents">
-        <div class="event-banner">
-            <div id="rolling">
-                <div id="slider" class="slide_area">
-                    
-                    <div class="slider">
-                        <div onclick="window.open('about:blank').location.href = 'https://spladmo.gameking.com/News/EventView.aspx?idx=146'"><img src='http://spladmo.gameking.com/digimon/banner/202501/09/118902865298.png' /></div><div onclick="window.open('about:blank').location.href = 'https://spladmo.gameking.com/News/NoticeView.aspx?idx=1262'"><img src='http://spladmo.gameking.com/digimon/banner/202501/16/157670374685.jpg' /></div>
-                        
-                    </div>
-
-                </div>
-            </div>
-
-        </div><!-- //event-banner -->
-
-        <!-- list-area -->
-        <ul class="news">
-			<li class="first"><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1263" target="_blank">[Evento] ¡Las Estrellas del Jumping!...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1262" target="_blank">[Evento] Salto de la fortuna...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1261" target="_blank">[Evento] Especial de Recarga de Crowns...</a></li><li ><span class="mode event"><em>EVENT</em></span> <a href="/News/EventView.aspx?idx=147" target="_blank">Nota de Actualizacion en 16/1/2025...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1260" target="_blank">TGT: Aviso de la ronda de Octavos y Cuartos...</a></li><li ><span class="mode notice"><em>NOTICE</em></span> <a href="/News/NoticeView.aspx?idx=1259" target="_blank">Aviso de Mantenimiento</a></li>
-        </ul>
-        <!-- //list-area -->
-    </div>
-    <!-- //contents -->
-</div>
 </body>
+
 </html>
-
-
