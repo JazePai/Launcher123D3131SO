@@ -1,91 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" />
-    <title>
-        Welcome to Digital Shinka Online!!
-    </title>
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="description" content="Welcome to Digital Shinka Online!!">
-
-    <link rel="stylesheet" type="text/css" href="/inc/css/default.css?ver=202303291050?2022080416" />
-    <link rel="stylesheet" type="text/css" href="/inc/css/common.css?2022080416" />
-    <link rel="stylesheet" type="text/css" href="/inc/css/top.css?2022080416" />
-    <link rel="stylesheet" type="text/css" href="/inc/css/footer.css?ver=20230329?2022080416" />
-
-   
-
-    <!-- Google tag (gtag.js) -->
-
-    <script type="text/javascript">
-        function OpenBillion() {
-            document.getElementById('popup_billion').style.display = "block";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page with Background Image</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('background.jpeg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            height: 100vh; /* Full window height */
         }
-        function CloseBillion() {
-            document.getElementById('popup_billion').style.display = "none";
-        }
-        function CloseOutBillion() {
-            document.getElementById('popup_billion').style.display = "none";
-            setCookie('popup_Billion', 'true');
-        }
-    </script>
 
-    <script type="text/javascript" src="/inc/script/jquery.js?2022080416"></script>
-    <script type="text/javascript" src="/inc/script/top.js?2022080416"></script>
-    <script type="text/javascript" src="/inc/script/loginMgr.js?2022080416"></script>
-    <script type="text/javascript" src="/inc/script/common.js?2022080416"></script>
+        /* Container to hold text and link, with a slight transparent background */
+        .content-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20%;
+        }
 
-    <style type="text/css">
-        * { margin: 0; padding: 0; border: none; }
-        html { padding: 0; margin: 0; overflow-x: hidden; overflow-y: hidden; scrollbars: no; border: none; }
+        a {
+            color: #00ff00;
+            font-size: 24px;
+            text-decoration: none;
+            border: 2px solid #00ff00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #00ff00;
+            color: black;
+        }
+
+        /* Adding a dark overlay on top of the background image for better readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Increased opacity to 60% */
+            z-index: -1; /* Keep it behind the content */
+        }
     </style>
 </head>
-
 <body>
-    <form name="form1" method="post" action="GameLauncher.aspx" id="form1">
-        <div>
-            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODk4Nzk3NDQ4D2QWAgIBD2QWAgICD2QWAgIBDxYCHgdWaXNpYmxlZ2Rk" />
-        </div>
-
-        <script type="text/javascript">
-            var theForm = document.forms['form1'];
-            if (!theForm) {
-                theForm = document.form1;
-            }
-            function __doPostBack(eventTarget, eventArgument) {
-                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                    theForm.__EVENTTARGET.value = eventTarget;
-                    theForm.__EVENTARGUMENT.value = eventArgument;
-                    theForm.submit();
-                }
-            }
-        </script>
-
-        <div id="wrap">
-            <a href="" target="_blank">
-                <img src="https://jazepai.github.io/123D3131SO/original.png" />
-            </a>
-        </div>
-    </form>
-
-    <div style="position:relative; width:1000px; margin: 0px auto; text-align:center; display:none; z-index:100;" id="popup_billion">
-        <div style="width:700px; height:700px; top:160px; left:210px; position:absolute; border:0px solid black;">
-            <img src="/images/event/2014/03/27/20140326_Main_popup.png" alt="" usemap="#map_billion" />
-            <map id="Map1" name="map_billion">
-                <area shape="rect" coords="629,11,652,38" href="#" onclick="CloseBillion();" alt="닫기" />
-                <area shape="rect" coords="29,262,228,325" href="http://youtu.be/fxQG5aj44_8" target="_blank" alt="빌리언 뮤직비디오 보기" />
-                <area shape="rect" coords="660,0,700,40" href="https://www.facebook.com/move.entertainment.1" target="_blank" alt="facebook" />
-                <area shape="rect" coords="660,40,700,80" href="http://www.youtube.com/user/MoveEntertain" target="_blank" alt="유투브" />
-                <area shape="rect" coords="520,666,630,680" href="#" onclick="CloseOutBillion();" alt="오늘 그만보기" />
-            </map>
-        </div>
+    <div class="content-container">
+        <h1>Click the link below to proceed</h1>
+        <a href="https://dmwteasers.boards.net/" target="_blank">Go to Teaser website</a>
     </div>
 </body>
-
 </html>
