@@ -7,15 +7,15 @@
     }
   },
   "PatchInfo": {
-    "DownloadUrl": "https://jazepai.github.io/LauncherDSO/UpdatePatch/",
+    "DownloadUrl": "https://jazepai.github.io/Launcher123D3131SO/UpdatePatch/",
     "MinPatchVersion": 1,
     "PatchVersion": 1
   },
   "LanuncherInfo": {
-    "DownloadPath": "https://jazepai.github.io/LauncherDSO/Launcher/",
+    "DownloadPath": "https://jazepai.github.io/Launcher123D3131SO/Launcher/",
     "CurrentVersion": 310,
     "ExeFileName": "DSOLauncher.exe",
-    "RunExeFileName": "GDMO.exe",
+    "RunExeFileName": "OPENSOURCE.exe",
     "VersionList": [
       {
         "Version": 310,
@@ -72,7 +72,7 @@
     ]
   },
   "UMInfo": {
-    "DownloadPath": "https://jazepai.github.io/LauncherDSO/UpdateManager/",
+    "DownloadPath": "https://jazepai.github.io/Launcher123D3131SO/UpdateManager/",
     "CurrentVersion": 8,
     "ExeFileName": "UpdateManager.exe",
     "RunExeFileName": "DSOLauncher.exe",
@@ -109,8 +109,8 @@
       "TypeName": "GSP",
       "HomePageUrl": "https://discord.gg/vtNnzfSF",
       "GameDownloadUrl": "https://discord.gg/vtNnzfSF",
-      "MainPageUrl": "https://jazepai.github.io/LauncherDSO/main.html",
-      "BanerUrl": "https://jazepai.github.io/LauncherDSO/banner.html",
+      "MainPageUrl": "https://jazepai.github.io/Launcher123D3131SO/main.html",
+      "BanerUrl": "https://jazepai.github.io/Launcher123D3131SO/banner.html",
       "ClientIP": "127.0.0.1",
       "ClientPort": "7605",
       "Unlock": false
