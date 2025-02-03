@@ -7,15 +7,15 @@
     }
   },
   "PatchInfo": {
-    "DownloadUrl": "https://jazepai.github.io/Launcher123D3131SO/UpdatePatch/",
+    "DownloadUrl": "https://jazepai.github.io/Site/UpdatePatch/",
     "MinPatchVersion": 1,
     "PatchVersion": 2
   },
   "LanuncherInfo": {
-    "DownloadPath": "https://jazepai.github.io/Launcher123D3131SO/Launcher/",
+    "DownloadPath": "https://jazepai.github.io/Site/Launcher/",
     "CurrentVersion": 310,
     "ExeFileName": "DSOLauncher.exe",
-    "RunExeFileName": "DSO.exe",
+    "RunExeFileName": "GDMO.exe",
     "VersionList": [
       {
         "Version": 310,
@@ -72,8 +72,8 @@
     ]
   },
   "UMInfo": {
-    "DownloadPath": "https://jazepai.github.io/Launcher123D3131SO/UpdateManager/",
-    "CurrentVersion": 8,
+    "DownloadPath": "https://jazepai.github.io/Site/UpdateManager/",
+    "CurrentVersion": 10,
     "ExeFileName": "UpdateManager.exe",
     "RunExeFileName": "DSOLauncher.exe",
     "VersionList": [
@@ -103,15 +103,15 @@
       }
     ]
   },
-  "RumbleConfig": "https://digital-shinka.github.io/digimon/cdn/rumble/live/RumbleConfig.json",
+  "RumbleConfig": "https://jazepai.github.io/digimon/cdn/rumble/live/RumbleConfig.json",
   "MainUrl": [
     {
       "TypeName": "GSP",
       "HomePageUrl": "https://discord.gg/vtNnzfSF",
       "GameDownloadUrl": "https://discord.gg/vtNnzfSF",
-      "MainPageUrl": "https://jazepai.github.io/Launcher123D3131SO/main.html",
-      "BanerUrl": "https://jazepai.github.io/Launcher123D3131SO/banner.html",
-      "ClientIP": "127.0.0.1",
+      "MainPageUrl": "https://jazepai.github.io/Site/main.html",
+      "BanerUrl": "https://jazepai.github.io/Site/banner.html",
+      "ClientIP": "game.digitalshinkaonline.com",
       "ClientPort": "7605",
       "Unlock": false
 
